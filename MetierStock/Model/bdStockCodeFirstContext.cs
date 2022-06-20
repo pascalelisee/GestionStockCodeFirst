@@ -9,8 +9,7 @@ namespace MetierStock.Model
     public class bdStockCodeFirstContext:DbContext
     {
         public bdStockCodeFirstContext() : base("connStock")
-        {
-
-        }
+        {}
+        public DbSet<Categorie> Categories { get; set; }
     }
 }
